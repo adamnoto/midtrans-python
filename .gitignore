@@ -1,5 +1,8 @@
 # compiled python modules
 *.pyc
+*.swp
+*.swo
+/.idea/
 
 # setuptools distribution folder
 /dist/
