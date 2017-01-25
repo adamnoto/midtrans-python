@@ -20,7 +20,6 @@ class CoreChargeReq(object, Serializable):
 
         self.payment_type = payment_type
         self.transaction_details = TransactionDetail(order_id=order_id, gross_amount=gross_amount)
-        self.customer_details = customer_details
         self.item_details = None
         self.custom_field1 = custom_field1
         self.custom_field2 = custom_field2

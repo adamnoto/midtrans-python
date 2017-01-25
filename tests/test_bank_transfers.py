@@ -1,6 +1,7 @@
 from midtrans import request
 from midtrans import banks
 
+
 def test_permata_va():
     req = request.ChargeBankTransfer(
         order_id="ORD-123",
@@ -11,6 +12,7 @@ def test_permata_va():
     serialized_req = {'bank_transfer': {'bank': 'permata'}, 'payment_type': 'bank_transfer', 'transaction_details': {'gross_amount': 250000, 'order_id': 'ORD-123'}}
 
     assert req.serialize() == serialized_req
+
 
 def test_bca_va():
     req = request.ChargeBankTransfer(
@@ -58,6 +60,7 @@ def test_bca_va():
                                            'email': 'adam@pahlevi.com'}}
 
     assert req.serialize() == serialized_req
+
 
 def test_mandiri_bill():
     req = request.ChargeMandiriBill(

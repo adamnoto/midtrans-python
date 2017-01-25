@@ -1,4 +1,7 @@
-class CustAddress(object):
+from ..serializable import Serializable
+
+
+class CustAddress(Serializable):
     """
     Object representing the customer address
     """
@@ -6,6 +9,7 @@ class CustAddress(object):
     def __init__(self,
                  first_name,
                  last_name,
+                 email,
                  phone,
                  address,
                  city,
@@ -14,6 +18,7 @@ class CustAddress(object):
 
         self.first_name = first_name
         self.last_name = last_name
+        self.email = email
         self.phone = phone
         self.address = address
         self.city = city
@@ -21,4 +26,4 @@ class CustAddress(object):
         self.country_code = country_code
 
     def __repr__(self):
-        return "CustAddress('{0}')".format(self.fname)
+        return "CustAddress('{0}')".format(self.first_name)
