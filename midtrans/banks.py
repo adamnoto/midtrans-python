@@ -1,0 +1,7 @@
+BNI = "bni"
+MANDIRI = "mandiri"
+CIMB = "cimb"
+BCA = "bca"
+BRI = "bri"
+MAYBANK = "maybank"
+PERMATA = "permata"
