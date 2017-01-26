@@ -37,3 +37,9 @@ To make the distribution, and publish it so other can install without cloning th
 ```
 python setup.py register sdist upload
 ```
+
+### Testing
+
+The library test units are written in pytest. After successful install of
+`pytest`, just simply execute `pytest` at the root directory to run
+the unit testings.
