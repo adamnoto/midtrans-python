@@ -24,6 +24,7 @@ class CoreChargeReq(object, Serializable):
         self.custom_field1 = custom_field1
         self.custom_field2 = custom_field2
         self.custom_field3 = custom_field3
+        self.customer_details = customer_details
 
     def add_item(self, item_detail):
         if self.item_details is None:

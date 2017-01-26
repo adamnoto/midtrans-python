@@ -4,7 +4,9 @@ import midtrans
 pkg_req = [
     'requests>=2.3.0'
 ]
-test_req = pkg_req + []
+test_req = pkg_req + [
+    'pytest>=3.0.6'
+]
 
 setup(name='midtrans',
       version=midtrans.__version__,

@@ -10,8 +10,8 @@ class ChargeBcaKlikpay(CoreChargeReq):
     def __init__(self,
                  order_id,
                  gross_amount,
-                 type = None,
-                 description = None,
+                 klikpay_type=None,
+                 description=None,
                  misc_fee=None):
 
         CoreChargeReq.__init__(
@@ -21,8 +21,23 @@ class ChargeBcaKlikpay(CoreChargeReq):
             gross_amount=gross_amount
         )
 
-        self.type = type
-        self.description = description
+        self.bca_klikpay = dict(description=description, type=klikpay_type)
 
         if misc_fee:
             self.misc_fee = int(misc_fee)
+
+    @property
+    def klikpay_type(self):
+        return self.bca_klikpay["type"]
+
+    @klikpay_type.setter
+    def klikpay_type(self, value):
+        self.bca_klikpay["type"] = value
+
+    @property
+    def description(self):
+        return self.bca_klikpay["description"]
+
+    @description.setter
+    def description(self, value):
+        self.bca_klikpay["description"] = value

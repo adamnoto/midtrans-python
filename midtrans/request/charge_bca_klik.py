@@ -2,7 +2,7 @@ from .core_charge_req import CoreChargeReq
 from ..paysource import BANK_TRANSFER
 
 
-class ChargeBcaKlik(CoreChargeReq):
+class ChargeBcaKlikBca(CoreChargeReq):
     """
     Charge request object for BCA Klikbca
     """
@@ -20,5 +20,23 @@ class ChargeBcaKlik(CoreChargeReq):
             gross_amount=gross_amount
         )
 
+        self.bca_klikbca = dict()
+
         self.desc = desc
         self.user_id = user_id
+
+    @property
+    def desc(self):
+        return self.bca_klikbca["desc"]
+
+    @desc.setter
+    def desc(self, value):
+        self.bca_klikbca["desc"] = value
+
+    @property
+    def user_id(self):
+        return self.bca_klikbca["user_id"]
+
+    @user_id.setter
+    def user_id(self, value):
+        self.bca_klikbca["user_id"] = value

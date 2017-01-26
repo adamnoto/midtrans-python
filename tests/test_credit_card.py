@@ -1,8 +1,6 @@
 from midtrans import request
-import pytest
 
 
-@pytest.fixture(scope="module")
 def get_request():
     req = request.ChargeCreditCard(
         order_id="ORD-129",

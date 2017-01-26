@@ -10,9 +10,9 @@ class ChargeTelkomselCash(CoreChargeReq):
     def __init__(self,
                  order_id,
                  gross_amount,
-                 promo,
-                 is_reversal,
-                 customer):
+                 promo=None,
+                 is_reversal=None,
+                 customer=None):
 
         CoreChargeReq.__init__(
             self,
@@ -21,6 +21,32 @@ class ChargeTelkomselCash(CoreChargeReq):
             gross_amount=gross_amount
         )
 
+        self.telkomsel_cash = dict()
+
         self.promo = promo
-        self.is_reveral = int(is_reversal)
+        self.is_reversal = is_reversal
         self.customer = customer
+
+    @property
+    def promo(self):
+        return self.telkomsel_cash["promo"]
+
+    @promo.setter
+    def promo(self, value):
+        self.telkomsel_cash["promo"] = value
+
+    @property
+    def is_reversal(self):
+        return self.telkomsel_cash["is_reversal"]
+
+    @is_reversal.setter
+    def is_reversal(self, value):
+        self.telkomsel_cash["is_reversal"] = int(value)
+
+    @property
+    def customer(self):
+        return self.telkomsel_cash["customer"]
+
+    @customer.setter
+    def customer(self, value):
+        self.telkomsel_cash["customer"] = value
