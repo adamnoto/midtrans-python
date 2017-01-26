@@ -5,3 +5,13 @@ BCA = "bca"
 BRI = "bri"
 MAYBANK = "maybank"
 PERMATA = "permata"
+
+ALL_BANKS = [
+    BNI,
+    MANDIRI,
+    CIMB,
+    BCA,
+    BRI,
+    MAYBANK,
+    PERMATA
+]

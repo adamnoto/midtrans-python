@@ -18,6 +18,9 @@ class Serializable:
                                 results[key].append(val.serialize())
                             elif val is not None:
                                 results[key].append(val)
+                    elif type(val) is dict:
+                        if not len(val) is 0:
+                            results[key] = val
                     else:
                         results[key] = val
 

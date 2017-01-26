@@ -15,3 +15,4 @@ from .charge_xl_tunai import ChargeXlTunai
 from .charge_isat_dompetku import ChargeIndosatDompetku
 from .charge_mand_ecash import ChargeMandiriEcash
 from .charge_conv import ChargeIndomaretConvStore, ChargeKiosonConvStore
+from .snap_charge_req import SnapChargeReq
