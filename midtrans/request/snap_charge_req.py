@@ -5,7 +5,7 @@ from ..banks import ALL_BANKS
 from datetime import datetime
 
 
-class SnapChargeReq(object, Serializable):
+class SnapChargeReq(Serializable):
     """
     Construct the body for charging customers using snap
     """

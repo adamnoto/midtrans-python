@@ -2,7 +2,7 @@ from .trans_detail import TransactionDetail
 from ..serializable import Serializable
 
 
-class CoreChargeReq(object, Serializable):
+class CoreChargeReq(Serializable):
     """
     Core charge request, you should not use this class other than for
     the purpose of subclassing. Use the specific class for the payment
