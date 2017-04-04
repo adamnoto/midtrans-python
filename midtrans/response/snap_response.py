@@ -1,8 +1,8 @@
 class SnapResponse(object):
     def __init__(self,
-                 status_code,
-                 token,
-                 error_messages):
+                 token=None,
+                 status_code=None,
+                 error_messages=None):
 
         self.status_code = status_code
         self.token = token
