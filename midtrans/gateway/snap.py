@@ -1,4 +1,4 @@
-from midtrans import response
+from ..response import Response
 from ..request import SnapChargeReq
 
 
