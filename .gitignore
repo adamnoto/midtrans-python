@@ -3,6 +3,7 @@
 *.swp
 *.swo
 /.idea/
+venv/
 
 # setuptools distribution folder
 /dist/
