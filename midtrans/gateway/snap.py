@@ -1,4 +1,4 @@
-from ..response import Response
+from ..response import SnapResponse
 from ..request import SnapChargeReq
 
 
@@ -16,7 +16,7 @@ class Snap:
 
         url = self.client.environment_type.app_url + path
         json_resp = self.client.call(method, url, parameters)
-        return response.SnapResponse(**json_resp)
+        return SnapResponse(**json_resp)
 
     def get_token(self, snap_req):
         """
