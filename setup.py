@@ -10,7 +10,7 @@ test_req = pkg_req + [
 
 setup(name='midtrans',
       version=midtrans.__version__,
-      url='https://github.com/saveav/midtrans-py',
+      url='https://github.com/saveav/midtrans-python',
       license='MIT',
       author='Adam Pahlevi',
       author_email='adam.pahlevi@midtrans.com',
