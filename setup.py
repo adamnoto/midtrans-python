@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 import re
 import ast
 
@@ -23,7 +23,7 @@ setup(name='midtrans',
       author_email='adam.pahlevi@midtrans.com',
       description='Official Midtrans library',
       long_description='Official Midtrans library',
-      packages=['midtrans'],
+      packages=find_packages(),
       keywords='midtrans veritrans',
       include_package_data=True,
       platform='any',
