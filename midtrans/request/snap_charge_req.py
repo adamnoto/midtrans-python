@@ -1,4 +1,4 @@
-from trans_detail import TransactionDetail
+from .trans_detail import TransactionDetail
 from ..serializable import Serializable
 from ..paysource import *
 from ..banks import ALL_BANKS
