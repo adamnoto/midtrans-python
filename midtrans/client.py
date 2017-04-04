@@ -1,4 +1,4 @@
-from envtype import SANDBOX
+from .envtype import SANDBOX
 import json
 import requests
 
