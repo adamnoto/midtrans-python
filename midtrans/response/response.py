@@ -30,7 +30,10 @@ class Response(object):
                  validation_messages=None,
                  page=None,
                  total_page=None,
-                 total_record=None):
+                 total_record=None,
+                 payment_amounts=None,
+                 va_numbers=None,
+                 currency=None):
 
         '''
         Bellow are the fields that always present in any kind of response
@@ -66,3 +69,6 @@ class Response(object):
         self.page = page
         self.total_page = total_page
         self.total_record = total_record
+        self.payment_amounts = payment_amounts
+        self.va_numbers = va_numbers
+        self.currency = currency
