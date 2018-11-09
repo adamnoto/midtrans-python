@@ -9,10 +9,10 @@ class EnvironmentType:
 
 SANDBOX = EnvironmentType()
 SANDBOX.envname = "SANDBOX"
-SANDBOX.api_url = "https://api.sandbox.veritrans.co.id"
-SANDBOX.app_url = "https://app.sandbox.veritrans.co.id"
+SANDBOX.api_url = "https://api.sandbox.midtrans.com"
+SANDBOX.app_url = "https://app.sandbox.midtrans.com"
 
 PRODUCTION = EnvironmentType()
 PRODUCTION.envname = "PRODUCTION"
-PRODUCTION.api_url = "https://api.veritrans.co.id"
-PRODUCTION.app_url = "https://app.veritrans.co.id"
+PRODUCTION.api_url = "https://api.midtrans.com"
+PRODUCTION.app_url = "https://app.midtrans.com"
