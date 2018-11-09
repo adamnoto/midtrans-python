@@ -11,9 +11,9 @@ class Client:
     def __init__(self,
                  client_key,
                  server_key,
-                 environment_tyoe=SANDBOX):
+                 environment_type=SANDBOX):
 
-        self.environment_type = environment_tyoe
+        self.environment_type = environment_type
         self.client_key = client_key
         self.server_key = server_key
 

@@ -33,7 +33,7 @@ class Response(object):
                  total_record=None):
 
         '''
-        Bellow are the fields that always present in any kind of response
+        Below are the fields that are always present in any kind of response
         '''
         self.status_code = int(status_code)
         self.status_message = status_message

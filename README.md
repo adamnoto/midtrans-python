@@ -22,7 +22,7 @@ def test_snap_gateway():
     client = Client(
         client_key="Vt-Client-Key",
         server_key="Vt-Server-Key",
-        environment_tyoe=PRODUCTION
+        environment_type=PRODUCTION
     )
 
     snap = gateway.Snap(client=client)
@@ -58,7 +58,7 @@ with examples on how to better utilise this library.
 To install the package:
 
 ```
-pip install midtrans
+python setup.py install
 ```
 
 ### For maintainer
